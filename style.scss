@@ -1,0 +1,237 @@
+// Color Variables
+$wht: #fff;
+$blu: #007bff;
+$inactive: rgba(255, 255, 255, 0.7);
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  .container {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+}
+
+// Navigation
+nav {
+  width: 100%;
+  padding: 12px 0;
+  position: absolute;
+  top: 0;
+  z-index: 2;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .logo-left {
+      display: flex;
+      a {
+        text-decoration: none;
+      }
+      h1 {
+        margin: 0;
+        color: $wht;
+        font-weight: 400;
+        font-size: 2rem;
+        text-transform: capitalize;
+      }
+      span {
+        color: $blu;
+        padding: 17px 0 0 0;
+        font-weight: 800;
+      }
+    }
+    .items-right {
+      display: flex;
+      .active {
+        color: $wht;
+      }
+      a {
+        margin: 0 45px 0 0;
+        text-decoration: none;
+        color: $inactive;
+        text-transform: capitalize;
+        transition: 0.3s ease-in-out;
+        &:hover {
+          color: $wht;
+        }
+      }
+      .social {
+        a {
+          margin: 0 10px 0 0;
+        }
+      }
+    }
+  }
+}
+
+// Hero
+.hero {
+  width: 100%;
+  background: url("img/hero_2.jpg") no-repeat center center;
+  background-size: cover;
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  .overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: #000;
+    opacity: 0.7;
+  }
+  .container {
+    width: 100%;
+    max-width: 950px;
+    text-align: center;
+    position: relative;
+    z-index: 3;
+    h1 {
+      font-size: 4rem;
+      text-transform: uppercase;
+      color: $wht;
+      margin: 0;
+      font-weight: 700;
+    }
+    p {
+      color: $wht;
+      margin: 7px 0;
+      line-height: 1.5;
+      font-size: 1.4rem;
+      font-weight: 300;
+    }
+    .btn {
+      padding: 60px 0 55px 0;
+      a {
+        padding: 12px 35px;
+        border-radius: 24px;
+        background: $blu;
+        color: $wht;
+        text-decoration: none;
+        text-transform: capitalize;
+      }
+    }
+    .slider {
+      i {
+        font-size: 7px !important;
+        color: rgba(255, 255, 255, 0.5);
+        &:nth-child(2) {
+          color: $wht;
+        }
+      }
+    }
+  }
+  .middle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 50px;
+    .mouse {
+      width: 27px;
+      height: 50px;
+      border: 2px solid $wht;
+      border-radius: 60px;
+      &::before {
+        content: "";
+        width: 4px;
+        height: 4px;
+        position: absolute;
+        top: 4px;
+        background: $wht;
+        left: 50%;
+        transform: translateX(-50%);
+        border-radius: 50%;
+        opacity: 1;
+        animation: mouse 2s infinite;
+      }
+    }
+  }
+
+  @keyframes mouse {
+    from {
+      opacity: 1;
+      top: 4px;
+    }
+    to {
+      opacity: 0;
+      top: 30px;
+    }
+  }
+}
+
+// About Us
+.about-us {
+  width: 100%;
+  .heading {
+    text-align: center;
+    width: 100%;
+    max-width: 780px;
+    margin: 0 auto;
+    padding: 100px 0 30px 0;
+    h1 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: $blu;
+      text-transform: capitalize;
+      margin: 0 0 15px 0;
+    }
+    span {
+      font-size: 1.3rem;
+      color: #808080;
+      font-weight: 300;
+    }
+  }
+  .container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 0;
+    .img-left {
+      width: 530px;
+      position: relative;
+      img {
+        width: 100%;
+        display: block;
+      }
+      .circle {
+        position: absolute;
+        top: 35%;
+        right: -15%;
+        height: 320px;
+        width: 320px;
+        background: #f8f9fa;
+        border-radius: 50%;
+        z-index: -1;
+      }
+    }
+    .text-right {
+      width: 100%;
+      max-width: 450px;
+      padding: 0 10px 0 0;
+      h3 {
+          text-transform: capitalize;
+          font-weight: 400;
+          font-size: 1.8rem;
+          margin: 0;
+      }
+      p {
+          color: #808080;
+          line-height: 1.8;
+      }
+    }
+  }
+}
