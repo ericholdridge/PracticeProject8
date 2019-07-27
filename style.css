@@ -177,6 +177,7 @@ nav .container .items-right .social a {
           align-items: center;
   position: absolute;
   bottom: 50px;
+  left: 49%;
 }
 
 .hero .middle .mouse {
@@ -298,5 +299,139 @@ nav .container .items-right .social a {
 .about-us .container .text-right p {
   color: #808080;
   line-height: 1.8;
+}
+
+.banking-solutions {
+  padding: 200px 0 0 0;
+  width: 100%;
+}
+
+.banking-solutions .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.banking-solutions .container .card-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.banking-solutions .container .card-wrap .card {
+  width: 100%;
+  max-width: 400px;
+  padding: 0 28px;
+  text-align: center;
+}
+
+.banking-solutions .container .card-wrap .card .img-wrap {
+  height: 90px;
+  width: 90px;
+  margin: 0 auto;
+}
+
+.banking-solutions .container .card-wrap .card .img-wrap img {
+  width: 100%;
+  display: block;
+}
+
+.banking-solutions .container .card-wrap .card h1 {
+  text-transform: capitalize;
+  font-weight: 400;
+  margin: 15px 0;
+}
+
+.banking-solutions .container .card-wrap .card p {
+  color: gray;
+  line-height: 1.7;
+}
+
+.banking-solutions .container .flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 60px 0 0 0;
+}
+
+.banking-solutions .container .flex .img-left {
+  width: 100%;
+  max-width: 530px;
+  position: relative;
+}
+
+.banking-solutions .container .flex .img-left img {
+  width: 100%;
+  display: block;
+}
+
+.banking-solutions .container .flex .img-left .circle {
+  position: absolute;
+  top: 35%;
+  right: -15%;
+  height: 320px;
+  width: 320px;
+  background: #f8f9fa;
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.banking-solutions .container .flex .text-right {
+  width: 100%;
+  max-width: 450px;
+}
+
+.banking-solutions .container .flex .text-right h1 {
+  font-weight: 400;
+  text-transform: capitalize;
+  font-size: 1.8rem;
+  margin: 0;
+}
+
+.banking-solutions .container .flex .text-right p {
+  color: gray;
+  line-height: 1.7;
+  padding: 0 10px 0 0;
+}
+
+.banking-solutions .container .flex .text-right .list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 10px 0 0 0;
+}
+
+.banking-solutions .container .flex .text-right .list .wrap {
+  padding: 0 0 16px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.banking-solutions .container .flex .text-right .list .wrap i {
+  color: #71bc42;
+  margin: 0 18px 0 0;
+}
+
+.banking-solutions .container .flex .text-right .list .wrap span {
+  display: block;
+  color: gray;
 }
 /*# sourceMappingURL=style.css.map */
